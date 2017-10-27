@@ -2,18 +2,74 @@
 @model ContactModel
 @{
     ViewData["Title"] = "Contact";
+    ViewData["ContactClasses"] = "active";
+    Layout = "_SubPageLayout";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+		<div class="gb-breadcrumb gb-bg white-color">
+			<div class="container">
+				<div class="breadcrumb-info text-center">
+					<div class="page-title">
+						<h1>
+							<span class="before-top"></span>
+							<span>Contact Us</span>
+							<span class="before-bottom"></span>
+						</h1>
+					</div>
+					<ol class="breadcrumb">
+						<li><a href="/">Home</a></li>
+						<li class="active">Contact us</li>
+					</ol>				
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.gb-breadcrumb -->	
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+		<div class="gb-contact-form gb-section">
+			<div class="container">
+				<form method="POST" class="gb-form">
+					<div class="row"> 
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="text" class="form-control" required="required" placeholder="Your Name">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="email" class="form-control" required="required" placeholder="Your Email">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="text" class="form-control" required="required" placeholder="Subject">
+							</div> 
+						</div>  
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="message" class="form-control" required="required" rows="7" placeholder="Your Message"></textarea>
+							</div>             
+						</div> 					  
+					</div>
+					<button type="submit" class="btn button-red pull-right"><span>Send Message</span></button>
+				</form>					
+			</div><!-- /.container -->
+		</div><!-- /.gb-contact-form -->	
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+        
+		<div class="gb-contact text-center">
+			<div id="gmap"></div>
+			<div class="contact-info contact-address">
+				<div class="event">
+					<h2>Arlington, Texas</h2>
+					<address>
+						<p>416 S. Yates St., Arlington, TX 76010</p><br>
+					</address>
+				</div>
+				<ul class="contact-social gb-list list-inline">
+					<li><a href="#"><img src="images/others/facebook.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/twitter.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/youtube.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/instagram.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/whatsapp.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/google-plus.png" alt="Icon" class="img-responsive"></a></li>
+				</ul>				
+			</div>
+		</div><!-- /.gb-contact -->	
