@@ -3,7 +3,848 @@
 @{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+		<div class="upcoming-events gb-section text-center">
+			<div class="container">
+				<div class="title-section">
+					<h1 class="color-red">
+						<span class="before-top"></span>
+						<span>Upcoming Events</span>
+						<span class="before-bottom"></span>
+					</h1>
+				</div>
+				<div class="event-content">
+					<div class="row">
+                        @Html.Partial("_Event", Model.PaperCall)
+						<div class="col-sm-6 col-md-3">
+							<div class="event">
+								<div class="gb-time color-red">
+									<p>12 <span>Jul</span></p>
+								</div>
+								<h2>Munich, Germany</h2>
+								<address><p>30217 new street road Berlin, Germany</p></address>
+								<a href="#" class="btn btn-default">Get a Ticket</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="event">
+								<div class="gb-time color-red">
+									<p>12 <span>Aug</span></p>
+								</div>
+								<h2>Hamburg, Germany</h2>
+								<address><p>30217 new street road Berlin, Germany</p></address>
+								<a href="#" class="btn btn-default">Get a Ticket</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="event">
+								<div class="gb-time color-red">
+									<p>09 <span>Sep</span></p>
+								</div>
+								<h2>Cologne, Germany</h2>
+								<address><p>30217 new street road Berlin, Germany</p></address>
+								<a href="#" class="btn btn-default">Get a Ticket</a>
+							</div>
+						</div>
+					</div><!-- /.row -->
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.upcoming-events -->
+		
+		<div class="gb-cta-1 gb-section gb-bg">
+			<div class="container">
+				<div class="cta-info white-color">
+					<h1>What is Eventup Leadership Conference 2017 ?</h1>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor</p>
+					<div class="buttons">
+						<a href="#" class="btn button-white">Explore Now</a>
+						<a href="#" class="btn btn-default">Get a Ticket</a>
+					</div>
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.gb-cta-1 -->
+		
+		<div class="gb-speakers gb-section text-center">
+			<div class="container">
+				<div class="title-section">
+					<h1 class="color-red">
+						<span class="before-top"></span>
+						<span>Eventup Speakers</span>
+						<span class="before-bottom"></span>
+					</h1>
+				</div>			
+				<div class="row text-left">
+					<div class="col-sm-6 col-md-3">
+						<div class="speaker">
+							<div class="speaker-image">
+								<img src="images/speaker/1.jpg" alt="Image" class="img-responsive">
+								<ul class="speaker-social gb-list list-inline">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker-title">
+								<h2>Jhon Peterson</h2>
+								<span>WebPentagon</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="speaker">
+							<div class="speaker-image">
+								<img src="images/speaker/2.jpg" alt="Image" class="img-responsive">
+								<ul class="speaker-social gb-list list-inline">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker-title">
+								<h2>Maria Stevan</h2>
+								<span>WebPentagon</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="speaker">
+							<div class="speaker-image">
+								<img src="images/speaker/3.jpg" alt="Image" class="img-responsive">
+								<ul class="speaker-social gb-list list-inline">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker-title">
+								<h2>Jhon Polo</h2>
+								<span>WebPentagon</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="speaker">
+							<div class="speaker-image">
+								<img src="images/speaker/4.jpg" alt="Image" class="img-responsive">
+								<ul class="speaker-social gb-list list-inline">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker-title">
+								<h2>Sara Nova</h2>
+								<span>WebPentagon</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="speaker">
+							<div class="speaker-image">
+								<img src="images/speaker/5.jpg" alt="Image" class="img-responsive">
+								<ul class="speaker-social gb-list list-inline">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker-title">
+								<h2>Lucia Benzamn</h2>
+								<span>WebPentagon</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="speaker">
+							<div class="speaker-image">
+								<img src="images/speaker/6.jpg" alt="Image" class="img-responsive">
+								<ul class="speaker-social gb-list list-inline">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker-title">
+								<h2>Dariyen Summy</h2>
+								<span>WebPentagon</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="speaker">
+							<div class="speaker-image">
+								<img src="images/speaker/7.jpg" alt="Image" class="img-responsive">
+								<ul class="speaker-social gb-list list-inline">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker-title">
+								<h2>Nancy Doll</h2>
+								<span>WebPentagon</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="speaker">
+							<div class="speaker-image">
+								<img src="images/speaker/8.jpg" alt="Image" class="img-responsive">
+								<ul class="speaker-social gb-list list-inline">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker-title">
+								<h2>Jhon Peterson</h2>
+								<span>WebPentagon</span>
+							</div>
+						</div>
+					</div>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.gb-section -->
+		
+		<div class="gb-schedules width-bg gb-section gb-bg text-center">
+			<div class="container">
+				<div class="title-section white-title">
+					<h1>
+						<span class="before-top"></span>
+						<span>Event Schedules</span>
+						<span class="before-bottom"></span>
+					</h1>
+				</div>	
+				<div class="schedule-content text-left">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab"><span>Day One</span> 27 Aug 2017</a></li>
+						<li role="presentation"><a href="#two" aria-controls="two" role="tab" data-toggle="tab"><span>Day Two</span> 28 Aug 2017</a></li>
+						<li role="presentation"><a href="#three" aria-controls="three" role="tab" data-toggle="tab"><span>Day Three</span> 29 Aug 2017</a></li>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="one">
+							<div class="schedule">
+								<ul class="gb-list">
+									<li class="expandable active">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Evan Fulton</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Introducing Conference</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 10:00 am - 10:15 am</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author1.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Nancy Doll</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>How to Make Attractive Design</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 10:15 am - 11:15 am</li>
+														<li><i class="fa fa-google-plus" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="gb-break">
+										<div class="row">
+											<div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+												<div class="schedule-info">
+													<h2>Tea Break</h2>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 11:15 am - 11:30 am</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author2.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Dariyen Summy</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Responsive Web Applications </h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 11:30 am - 12:15 pm</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author3.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Jhon Polok</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Successful Marketing Policy
+													</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 12:15 pm - 01:25 pm</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>																		
+									<li class="gb-break">
+										<div class="row">
+											<div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+												<div class="schedule-info">
+													<h2>Lunch Break</h2>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 01:25 pm - 02:15 pm</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author4.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Evan Fulton</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Successful Marketing Policy</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 02:15 pm - 04:00 pm</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>									
+								</ul>							
+							</div><!-- /.schedule -->
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="two">
+							<div class="schedule">
+								<ul class="gb-list">
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author1.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Nancy Doll</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>How to Make Attractive Design</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 10:00 am - 10:15 am</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li  class="expandable active">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Evan Fulton</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Introducing Conference</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 10:15 am - 11:15 am</li>
+														<li><i class="fa fa-google-plus" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="gb-break">
+										<div class="row">
+											<div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+												<div class="schedule-info">
+													<h2>Tea Break</h2>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 11:15 am - 11:30 am</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author2.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Dariyen Summy</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Responsive Web Applications</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 11:30 am - 12:15 pm</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author3.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Jhon Polok</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Successful Marketing Policy</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 12:15 pm - 01:25 pm</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>																		
+									<li class="gb-break">
+										<div class="row">
+											<div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+												<div class="schedule-info">
+													<h2>Lunch Break</h2>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 01:25 pm - 02:15 pm</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author4.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Evan Fulton</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Successful Marketing Policy</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 02:15 pm - 04:00 pm</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>									
+								</ul>							
+							</div><!-- /.schedule -->
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="three">
+							<div class="schedule">
+								<ul class="gb-list">
+									<li class="expandable active">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author4.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Evan Fulton</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Successful Marketing Policy</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 10:00 am - 10:15 am</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Evan Fulton</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Introducing Conference</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 10:15 am - 11:15 am</li>
+														<li><i class="fa fa-google-plus" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="gb-break">
+										<div class="row">
+											<div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+												<div class="schedule-info">
+													<h2>Tea Break</h2>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 11:15 am - 11:30 am</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author2.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Dariyen Summy</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Responsive Web Applications</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 11:30 am - 12:15 pm</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="expandable">
+										<div class="row">
+											<div class="col-sm-3 col-md-2">
+												<div class="author">
+													<div class="author-image">
+								            			<a href="schedule.html"><img src="images/others/author3.png" alt="Image" class="img-responsive img-circle"></a>
+													</div>
+								            		<div class="author-title">
+								                		<h2>Jhon Polok</h2>
+								                		<span>Web Pentagon</span>
+								                	</div>
+								            	</div>
+											</div>
+											<div class="col-sm-9 col-md-10">
+												<div class="schedule-info">
+													<h2>Successful Marketing Policy</h2>
+													<div class="schedule-summary">
+														<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+													</div>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 12:15 pm - 01:25 pm</li>
+														<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> Hall 1, Building A</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>																		
+									<li class="gb-break">
+										<div class="row">
+											<div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+												<div class="schedule-info">
+													<h2>Program ending speech</h2>
+													<ul class="gb-list">
+														<li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> 01:25 pm - 02:00 pm</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>								
+								</ul>							
+							</div><!-- /.schedule -->
+						</div>
+					</div>
+
+				</div><!-- /.schedule-content -->				
+			</div><!-- /.container -->
+		</div><!-- /.gb-section -->
+		
+		<div class="gb-pricing gb-section text-center">
+			<div class="container">
+				<div class="title-section">
+					
+					<h1 class="color-red">
+						<span class="before-top"></span>
+						<span>Pricing Table</span>
+						<span class="before-bottom"></span>
+					</h1>
+				</div>			
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="gb-price">
+							<div class="price-info">
+								<h2>Standard</h2>
+								<h3 class="color-red">$29</h3>
+								<span class="per-month">Per Month</span>
+							</div>
+							<ul class="gb-list">
+								<li>20 GB Bandwith</li>
+								<li>5 Domain Names</li>
+								<li>Unlimited domain</li>
+								<li>Enhanced Security</li>
+								<li>1GB Dedicated Ram</li>
+							</ul>
+							<a href="#" class="btn btn-default"><span>Purchase Now</span></a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="gb-price active">
+							<div class="price-info">
+								<h2>Premium</h2>
+								<h3 class="color-red">$59</h3>
+								<span class="per-month">Per Month</span>
+							</div>
+							<ul class="gb-list">
+								<li>25 GB Bandwith</li>
+								<li>8 Domain Names</li>
+								<li>Unlimited domain</li>
+								<li>Enhanced Security</li>
+								<li>2GB Dedicated Ram</li>
+							</ul>
+							<a href="#" class="btn button-red"><span>Purchase Now</span></a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="gb-price">
+							<div class="price-info">
+								<h2>Deluxe</h2>
+								<h3 class="color-red">$99</h3>
+								<span class="per-month">Per Month</span>
+							</div>
+							<ul class="gb-list">
+								<li>30 GB Bandwith</li>
+								<li>10 Domain Names</li>
+								<li>Unlimited domain</li>
+								<li>Enhanced Security</li>
+								<li>3GB Dedicated Ram</li>
+							</ul>
+							<a href="#" class="btn btn-default"><span>Purchase Now</span></a>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.gb-pricing -->
+		
+		<div class="gb-brand gb-section gb-bg white-color">
+			<div class="container">
+				<div class="title-section white-title">
+					<h1>
+						<span class="before-top"></span>
+						<span>Event Partners</span>
+						<span class="before-bottom"></span>
+					</h1>
+				</div>
+				<div class="brand-slider text-center">
+					<div class="brand">
+						<img src="images/brand/1.jpg" alt="Image" class="img-responsive">
+					</div>
+					<div class="brand">
+						<img src="images/brand/2.jpg" alt="Image" class="img-responsive">
+					</div>
+					<div class="brand">
+						<img src="images/brand/3.jpg" alt="Image" class="img-responsive">
+					</div>
+					<div class="brand">
+						<img src="images/brand/4.jpg" alt="Image" class="img-responsive">
+					</div>
+					<div class="brand">
+						<img src="images/brand/5.jpg" alt="Image" class="img-responsive">
+					</div>
+					<div class="brand">
+						<img src="images/brand/3.jpg" alt="Image" class="img-responsive">
+					</div>
+				</div>				
+			</div><!-- /.container -->
+		</div><!-- /.gb-brand  -->
+		
+		<div class="gb-contact text-center">
+			<div id="gmap"></div>
+			<div class="contact-info">
+				<div class="event">
+					<div class="gb-time color-red">
+						<p>12 <span>Jul</span></p>
+					</div>
+					<h2>Berlin, Germany</h2>
+					<address><p>30217 new street road Berlin, Germany</p></address>
+					<a href="#" class="btn btn-default">Get a Ticket</a>
+				</div>
+				<ul class="contact-social gb-list list-inline">
+					<li><a href="#"><img src="images/others/facebook.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/twitter.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/youtube.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/instagram.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/whatsapp.png" alt="Icon" class="img-responsive"></a></li>
+					<li><a href="#"><img src="images/others/google-plus.png" alt="Icon" class="img-responsive"></a></li>
+				</ul>				
+			</div>
+		</div><!-- /.gb-contact -->
+		
+		<div class="gb-cta-2 gb-section text-center white-color gb-bg">
+			<div class="container">
+				<div class="title-section white-title">
+					<h1>
+						<span class="before-top"></span>
+						<span>Get Ticket Now</span>
+						<span class="before-bottom"></span>
+					</h1>
+				</div>		
+				<div class="cta-info">
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit</p>
+					<a href="#" class="btn btn-default">Get a Ticket</a>
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.gb-cta-2 -->   

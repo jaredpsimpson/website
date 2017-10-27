@@ -9,9 +9,12 @@ namespace devfestweekend.Pages
 {
     public class IndexModel : PageModel
     {
+        [BindProperty]
+        public _EventModel PaperCall { get; set; }
+
         public void OnGet()
         {
-
+            //PaperCall = new _EventModel { Title = "Papercall", SubTitle = "Talk Submission Due Date", Date = new DateTime(2018, 8, 13), LinkText = "Submit Talk", LinkUrl = "https://papercall.io" };
         }
     }
 }
