@@ -2,22 +2,35 @@
 @model ErrorModel
 @{
     ViewData["Title"] = "Error";
+    
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
 
-@if (Model.ShowRequestId)
-{
-    <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
-    </p>
-}
-
-<h3>Development Mode</h3>
-<p>
-    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
-</p>
-<p>
-    <strong>Development environment should not be enabled in deployed applications</strong>, as it can result in sensitive information from exceptions being displayed to end users. For local debugging, development environment can be enabled by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>, and restarting the application.
-</p>
+		
+		<div class="gb-breadcrumb gb-bg white-color">
+			<div class="container">
+				<div class="breadcrumb-info text-center">
+					<div class="page-title">
+						<h1>
+							<span class="before-top"></span>
+							<span>@HttpContext.Response.StatusCode - Nothing to see here</span>
+							<span class="before-bottom"></span>
+						</h1>
+					</div>				
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.gb-breadcrumb -->	
+			
+		<div class="gb-not-found text-center gb-section">
+			<div class="container">
+				<div class="not-found-content">
+					<h1 class="color-red">@HttpContext.Response.StatusCode</h1>
+                    @if (HttpContext.Response.StatusCode == 404) {
+					<h2>We are sorry ! The page you are looking for, does not exist</h2>
+                    } else if (HttpContext.Response.StatusCode == 500) {
+					<h2>We are currently experiencing difficulties.  Please call back later.</h2>
+                    }
+					<a href="index.html" class="btn button-red">Back To Home</a>
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.gb-not-found -->
