@@ -37,7 +37,7 @@ namespace devfestweekend.Pages
                 var receiverAddress = Environment.GetEnvironmentVariable("APPSETTING_RECEIVER_EMAIL_ADDRESS");
                 var client = new SendGridClient(apiKey);
 
-                var htmlTags = new Regex("<(^>)*>");
+                var htmlTags = new Regex("<[^>]*>");
 
                 var htmlBannedMessage = htmlTags.Replace(Message, string.Empty);
                 var htmlBannedSubject = htmlTags.Replace(Subject, string.Empty);
