@@ -11,9 +11,9 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
-  <Target Name="EnsureNmpPackageBuildAndGulpBuild" BeforeTargets="BeforeBuild">
-    <Message Importance="high" Text="Test Message1" />
+  <Target Name="BowerInstall" BeforeTargets="BeforeBuild">
+    <Message Importance="high" Text="Pre Bower Command" />
     <Exec Command="./prebuild.bat" WorkingDirectory="$(ProjectDir)" />
-    <Message Importance="high" Text="Test Message2" />
+    <Message Importance="high" Text="Post Bower Command" />
   </Target>
 </Project>
