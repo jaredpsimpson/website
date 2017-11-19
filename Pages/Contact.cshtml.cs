@@ -33,8 +33,8 @@ namespace devfestweekend.Pages
             {
                 await Task.Delay(1);
                 Console.WriteLine ($"Hello {Name}, How are you doing?  I see you're emailing me about {Subject}: {Message}.  I will reply to {Email}");
-                var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
-                var receiverAddress = Environment.GetEnvironmentVariable("RECEIVER_EMAIL_ADDRESS");
+                var apiKey = Environment.GetEnvironmentVariable("APPSETTING_SENDGRID_API_KEY");
+                var receiverAddress = Environment.GetEnvironmentVariable("APPSETTING_RECEIVER_EMAIL_ADDRESS");
                 var client = new SendGridClient(apiKey);
 
                 var htmlTags = new Regex("<(^>)*>");
