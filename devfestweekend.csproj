@@ -11,4 +11,9 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
+  <Target Name="EnsureNmpPackageBuildAndGulpBuild" BeforeTargets="BeforeBuild">
+    <Message Importance="high" Text="Test Message1" />
+    <Exec Command="./prebuild.bat" WorkingDirectory="$(ProjectDir)" />
+    <Message Importance="high" Text="Test Message2" />
+  </Target>
 </Project>
