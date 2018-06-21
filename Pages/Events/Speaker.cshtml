@@ -1,0 +1,12 @@
+﻿@model devfestweekend.Models.Speaker
+<div class="col-sm-3 col-md-2">
+    <div class="author">
+        <div class="author-image">
+            <a href="schedule.html"><img src="@Model.AvatarUrl" alt="Image" class="img-responsive img-circle"></a>
+        </div>
+        <div class="author-title">
+            <h2>@Model.FirstName @Model.LastName</h2>
+            <span>@Model.CompanyName</span>
+        </div>
+    </div>
+</div>

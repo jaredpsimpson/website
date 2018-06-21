@@ -1,0 +1,21 @@
+﻿@model devfestweekend.Models.Session
+<li class="expandable">
+    <div class="row">
+        @if (Model.Speakers != null && Model.Speakers.Count > 0)
+        {
+            @Html.Partial("Events/Speaker", Model.Speakers.First());
+        }
+        <div class="col-sm-9 col-md-10">
+            <div class="schedule-info">
+                <h2>@Model.Title</h2>
+                <div class="schedule-summary">
+                    <p>@Model.Abstract</p>
+                </div>
+                <ul class="gb-list">
+                    <li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> @Model.StartTime.Value.ToString("HH:mm tt") - @Model.EndTime.Value.ToString("HH:mm tt")</li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Room:</span> @Model?.Room?.Name</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</li>
