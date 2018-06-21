@@ -2,28 +2,44 @@
 @model devfestweekend.Pages.ScheduleModel
 @{
     ViewData["Title"] = "Schedule";
-    Layout = "~/Pages/_Layout.cshtml";
+    Layout = "_Layout";
 }
-		<div class="gb-schedules gb-section text-center">
-			<div class="container">
-				<div class="schedule-content text-left">
-					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab"><span>Schedule</span></a></li>
-					</ul>
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active" id="one">
-							<div class="schedule">
-								<ul class="gb-list">
-                                    @foreach(var featuredEvent in Model.Events)
-                                    {
-                                        @Html.Partial("Events/FeaturedEvent", featuredEvent)
-                                    }								
-								</ul>							
-							</div><!-- /.schedule -->
-						</div>
-					</div>
 
+<div class="gb-breadcrumb gb-bg white-color schedule-bg">
+    <div class="container">
+        <div class="breadcrumb-info text-center">
+            <div class="page-title">
+                <h1>
+                    <span class="before-top"></span>
+                    <span>Schedule</span>
+                    <span class="before-bottom"></span>
+                </h1>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</div><!-- /.gb-breadcrumb -->
 
-				</div><!-- /.schedule-content -->				
-			</div><!-- /.container -->
-		</div><!-- /.gb-section -->
+<div class="gb-schedules gb-section text-center">
+    <div class="container">
+        <div class="schedule-content text-left">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab"><span>Schedule</span></a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="one">
+                    <div class="schedule">
+                        <ul class="gb-list">
+                            @if (Model.Events != null)
+                            {
+                                foreach (var featuredEvent in Model.Events)
+                                {
+                                    @Html.Partial("Events/FeaturedEvent", featuredEvent)
+                                }
+                            }
+                        </ul>
+                    </div><!-- /.schedule -->
+                </div>
+            </div>
+        </div><!-- /.schedule-content -->
+    </div><!-- /.container -->
+</div><!-- /.gb-section -->

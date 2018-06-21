@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -83,9 +83,12 @@
 				</div><!-- /.container -->					
 			</nav><!-- /.navbar -->										
 		</div><!-- /.gb-menu -->
-		
-@Html.Partial("Callouts/_Countdown")
- 
+
+@if (Context.Request.Path.Value == "/")
+{
+    @Html.Partial("Callouts/_Countdown")
+}
+
         @RenderBody()
 		
 		<div class="gb-footer white-color text-center">
