@@ -9,8 +9,6 @@ namespace devfestweekend.Pages
 {
     public class IndexModel : PageModel
     {
-        [BindProperty]
-        public _EventModel PaperCall { get; set; }
 
         public void OnGet()
         {
