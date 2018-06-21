@@ -642,9 +642,9 @@ textarea.form-control {
 	display: table;
 	position: relative;
 	z-index: 1;
-	background-image: url(../images/bg/home-bg.jpg);
+	background-image: url(../images/bg/home-bg.png);
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-color: rgba(0, 0, 0, 0.45);
 }
