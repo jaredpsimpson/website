@@ -1,0 +1,29 @@
+﻿@page
+@model devfestweekend.Pages.ScheduleModel
+@{
+    ViewData["Title"] = "Schedule";
+    Layout = "~/Pages/_Layout.cshtml";
+}
+		<div class="gb-schedules gb-section text-center">
+			<div class="container">
+				<div class="schedule-content text-left">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab"><span>Schedule</span></a></li>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="one">
+							<div class="schedule">
+								<ul class="gb-list">
+                                    @foreach(var featuredEvent in Model.Events)
+                                    {
+                                        @Html.Partial("Events/FeaturedEvent", featuredEvent)
+                                    }								
+								</ul>							
+							</div><!-- /.schedule -->
+						</div>
+					</div>
+
+
+				</div><!-- /.schedule-content -->				
+			</div><!-- /.container -->
+		</div><!-- /.gb-section -->
