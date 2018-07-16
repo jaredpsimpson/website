@@ -16,8 +16,8 @@ namespace devfestweekend.Pages
         public List<FeaturedEvent> Events { get; set; }
         public List<Session> Sessions { get; set; }
 
-        //private const string BaseAddress = "https://confdfw.azurewebsites.net/tables";
-        private const string BaseAddress = "http://localhost:51800/tables/";
+        private const string BaseAddress = "https://confdfw.azurewebsites.net/tables/";
+        //private const string BaseAddress = "http://localhost:51800/tables/";
         private HttpClient client;
 
         public ScheduleModel()
