@@ -10,6 +10,10 @@
     background-image: url(../images/bg/home-bg.png);
 }
 
+.schedule-bg {
+    background-image: url(../images/bg/schedule-bg.png);
+}
+
 .faq-bg {
     background-image: url(../images/bg/faq-bg.png);
 }
