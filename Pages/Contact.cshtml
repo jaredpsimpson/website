@@ -22,58 +22,61 @@
     </div><!-- /.container -->
 </div><!-- /.gb-breadcrumb -->
 
-@if (!Model.MessageSent) {
-		<div class="gb-contact-form gb-section">
-			<div class="container">
-				<form method="POST" class="gb-form">
-					<div class="row"> 
-						<div class="col-md-4">
-							<div class="form-group">
-								<input type="text" class="form-control" required="required" placeholder="Your Name" asp-for="Name">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<input type="email" class="form-control" required="required" placeholder="Your Email" asp-for="Email">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<input type="text" class="form-control" required="required" placeholder="Subject" asp-for="Subject">
-							</div> 
-						</div>  
-						<div class="col-md-12">
-							<div class="form-group">
-								<textarea name="message" class="form-control" required="required" rows="7" placeholder="Your Message" asp-for="Message"></textarea>
-							</div>             
-						</div> 					  
-					</div>
-					<button type="submit" class="btn button-red pull-right"><span>Send Message</span></button>
-				</form>					
-			</div><!-- /.container -->
-		</div><!-- /.gb-contact-form -->
-} else {
+@if (!Model.MessageSent)
+{
+    <div class="gb-contact-form gb-section">
+        <div class="container">
+            <form method="POST" class="gb-form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control" required="required" placeholder="Your Name" asp-for="Name">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="email" class="form-control" required="required" placeholder="Your Email" asp-for="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control" required="required" placeholder="Subject" asp-for="Subject">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" required="required" rows="7" placeholder="Your Message" asp-for="Message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn button-red pull-right"><span>Send Message</span></button>
+            </form>
+        </div><!-- /.container -->
+    </div><!-- /.gb-contact-form -->
+}
+else
+{
 
 }
 
-        
-		<div class="gb-contact text-center">
-			<div id="gmap"></div>
-			<div class="contact-info contact-address">
-				<div class="event">
-					<h2>Microsoft Irving Campus</h2>
-                    <address>
-                        <p>7000 State Highway 161</p><br>
-                        <p>Irving, TX 75039 </p><br>
-                    </address>
-				</div>
-				<ul class="contact-social gb-list list-inline">
-					<li><a href="https://www.facebook.com/DevFestWeekend/"><img src="images/others/facebook.png" alt="Icon" class="img-responsive"></a></li>
-					<li><a href="https://twitter.com/devfestweekend"><img src="images/others/twitter.png" alt="Icon" class="img-responsive"></a></li>
-					@*<li><a href="#"><img src="images/others/youtube.png" alt="Icon" class="img-responsive"></a></li>*@
-					@*<li><a href="#"><img src="images/others/instagram.png" alt="Icon" class="img-responsive"></a></li>*@
-					@*<li><a href="#"><img src="images/others/whatsapp.png" alt="Icon" class="img-responsive"></a></li>*@
-					@*<li><a href="#"><img src="images/others/google-plus.png" alt="Icon" class="img-responsive"></a></li>*@
-				</ul>				
-			</div>
-		</div><!-- /.gb-contact -->	
+
+<div class="gb-contact text-center">
+    <div id="gmap"></div>
+    <div class="contact-info contact-address">
+        <div class="event">
+            <h2>Microsoft Irving Campus</h2>
+            <address>
+                <p>7000 State Highway 161</p><br>
+                <p>Irving, TX 75039 </p><br>
+            </address>
+        </div>
+        <ul class="contact-social gb-list list-inline">
+            <li><a href="https://www.facebook.com/DevFestWeekend/"><img src="images/others/facebook.png" alt="Icon" class="img-responsive"></a></li>
+            <li><a href="https://twitter.com/devfestweekend"><img src="images/others/twitter.png" alt="Icon" class="img-responsive"></a></li>
+            @*<li><a href="#"><img src="images/others/youtube.png" alt="Icon" class="img-responsive"></a></li>*@
+            @*<li><a href="#"><img src="images/others/instagram.png" alt="Icon" class="img-responsive"></a></li>*@
+            @*<li><a href="#"><img src="images/others/whatsapp.png" alt="Icon" class="img-responsive"></a></li>*@
+            @*<li><a href="#"><img src="images/others/google-plus.png" alt="Icon" class="img-responsive"></a></li>*@
+        </ul>
+    </div>
+</div><!-- /.gb-contact -->
