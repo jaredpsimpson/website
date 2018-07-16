@@ -14,7 +14,7 @@
                     }
                     else
                     {
-                        <li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> @Model.StartTime.Value.ToString("HH:mm tt") - @Model.EndTime.Value.ToString("HH:mm tt")</li>
+                        <li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> @Model.StartTime.Value.ConvertToCentral().ToString("h:mm tt") - @Model.EndTime.Value.ConvertToCentral().ToString("h:mm tt")</li>
                     }
 
                     <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Venue:</span> @Model.LocationName</li>
