@@ -4,21 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
-@await Html.PartialAsync("Dates/Upcoming", Model.Dates);
-<div class="gb-cta-1 gb-section gb-bg">
-    <div class="container">
-        <div class="cta-info white-color">
-            <h1>What is Dev Fest Weekend 2018?</h1>
-            <p>There was a  group of local MVPs talking after a local user group meeting. After an engaging conversation on conferences, we came to the following conclusion:</p>
-            <p>Although we have many great conferences and great sessions with in our reach, we haven’t seen enough of the kind of presentations that excite us. So instead of just talking about the problem, we decided to do something about it.</p>
-            <p>This is a grass-roots initiative.</p>
-            <div class="buttons">
-                <a class="btn button-white" href="/faq">FAQ</a>
-                <a class="btn btn-default" href="https://devfestweekend.eventbrite.com/">Get a Ticket</a>
-            </div>
-        </div>
-    </div><!-- /.container -->
-</div>
+@await Html.PartialAsync("Callouts/_WhatIs")
 @if (Model.Speakers != null && Model.Speakers.Count > 0)
 {
     @await Html.PartialAsync("Speakers/Speakers", Model.Speakers);
