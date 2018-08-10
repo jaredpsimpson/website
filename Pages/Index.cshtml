@@ -4,6 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
+@await Html.PartialAsync("Dates/Upcoming", Model.Dates)
 @await Html.PartialAsync("Callouts/_WhatIs")
 @if (Model.Speakers != null && Model.Speakers.Count > 0)
 {
