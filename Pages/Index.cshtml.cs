@@ -22,13 +22,22 @@ namespace devfestweekend.Pages
         {
             Speakers = new List<Speaker>
             {
-                //new Speaker
-                //{
-                //    FirstName = "Billy",
-                //    LastName = "Hollys",
-                //    AvatarUrl = "images/speaker/8.jpg",
-                //    Biography = "Elevators!"
-                //}
+                new Speaker
+                {
+                    FirstName = "Billy",
+                    LastName = "Hollis",
+                    AvatarUrl = "images/speaker/billy-hollis.jpg",
+                    Biography = "Billy Hollis is a UX designer and application developer from Nashville, Tennessee. He leads a team with a worldwide reputation for designing and developing innovative, compelling user experiences. He has written many books and articles, and speaks at conferences around the world on user experience, design thinking, and native application technologies. Billy also spends time onsite for companies of all sizes, teaching teams about UX design, and collaborating with them on designing a new generation of their application.",
+                    TwitterUrl = "https://twitter.com/billyhollis"
+                },
+                new Speaker
+                {
+                    FirstName = "Troy",
+                    LastName = "Hunt",
+                    AvatarUrl = "images/speaker/troy-hunt.jpg",
+                    Biography = "Troy is a Microsoft Regional Director and MVP, Pluralsight author and world-renowned internet security specialist. He spends his time teaching developers how to break into their own systems before helping to piece them back together to be secure against today’s online threats. He’s also the creator of “Have I Been Pwned”, the free online service for breach monitoring and notifications. Troy regularly blogs at troyhunt.com from his home in Australia.",
+                    TwitterUrl = "https://twitter.com/troyhunt"
+                }
             };
 
             Dates = new List<Date>
