@@ -7,5 +7,5 @@
 @await Html.PartialAsync("Callouts/_WhatIs")
 @if (Model.Speakers != null && Model.Speakers.Count > 0)
 {
-    @await Html.PartialAsync("Speakers/Speakers", Model.Speakers);
+    @await Html.PartialAsync("Speakers/Speakers", Model.Speakers)
 }
