@@ -11,7 +11,7 @@
                 </h1>
             </div>
             <div class="row text-left">
-                foreach (var speaker in Model)
+                @foreach (var speaker in Model)
                 {
                     await Html.RenderPartialAsync("Speakers/Speaker", speaker);
                 }
