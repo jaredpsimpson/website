@@ -859,6 +859,11 @@ address a {
 	overflow: hidden;
 }
 
+.speaker-image img {
+    min-height: 350px;
+    max-height: 350px;
+}
+
 .speaker-social {
 	padding: 15px;
 	font-size: 14px;

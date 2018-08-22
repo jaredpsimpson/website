@@ -1,0 +1,32 @@
+﻿@page
+@model devfestweekend.Pages.SpeakersModel
+@{
+    ViewData["Title"] = "Schedule";
+    Layout = "_Layout";
+}
+
+<div class="gb-breadcrumb gb-bg white-color speakers-bg">
+    <div class="container">
+        <div class="breadcrumb-info text-center">
+            <div class="page-title">
+                <h2>
+                    <span class="before-top"></span>
+                    <span>Speakers</span>
+                    <span class="before-bottom"></span>
+                </h2>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li class="active">Speakers</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</div><!-- /.gb-breadcrumb -->
+<div class="gb-speakers gb-section">
+    <div class="container">
+        @if (Model.Speakers != null && Model.Speakers.Count > 0)
+        {
+            @await Html.PartialAsync("Speakers/Speakers", Model.Speakers)
+        }
+    </div>
+</div>

@@ -1,21 +1,10 @@
 ﻿@model List<devfestweekend.Models.Speaker>
 @if (Model != null && Model.Count > 0)
 {
-    <div class="gb-speakers gb-section text-center">
-        <div class="container">
-            <div class="title-section">
-                <h1 class="color-red">
-                    <span class="before-top"></span>
-                    <span>Featured Speakers</span>
-                    <span class="before-bottom"></span>
-                </h1>
-            </div>
-            <div class="row text-left">
-                @foreach (var speaker in Model)
-                {
-                    await Html.RenderPartialAsync("Speakers/Speaker", speaker);
-                }
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div>
+    <div class="row text-left">
+        @foreach (var speaker in Model)
+        {
+            await Html.RenderPartialAsync("Speakers/Speaker", speaker);
+        }
+    </div><!-- /.row -->
 }

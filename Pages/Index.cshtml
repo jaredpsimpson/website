@@ -6,7 +6,19 @@
 
 @await Html.PartialAsync("Dates/Upcoming", Model.Dates)
 @await Html.PartialAsync("Callouts/_WhatIs")
-@if (Model.Speakers != null && Model.Speakers.Count > 0)
-{
-    @await Html.PartialAsync("Speakers/Speakers", Model.Speakers)
-}
+<div class="gb-speakers gb-section">
+    <div class="container">
+        <div class="title-section">
+            <h1 class="color-red">
+                <span class="before-top"></span>
+                <span>Featured Speakers</span>
+                <span class="before-bottom"></span>
+            </h1>
+        </div>
+
+        @if (Model.Speakers != null && Model.Speakers.Count > 0)
+        {
+            @await Html.PartialAsync("Speakers/Speakers", Model.Speakers)
+        }
+    </div>
+</div>

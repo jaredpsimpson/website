@@ -32,7 +32,7 @@
             </div>
             <div class="speaker-title">
                 <h2>@Model.FirstName @Model.LastName</h2>
-                <span>@Model.Biography</span>
+                <span>@Model?.Sessions?.FirstOrDefault()?.Title</span>
             </div>
         </div>
     </div>
