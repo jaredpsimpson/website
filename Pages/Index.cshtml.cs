@@ -44,13 +44,6 @@ namespace devfestweekend.Pages
             {
                 new Date
                 {
-                    Href = "https://www.papercall.io/devfestweekend",
-                    When = DateTime.Parse("2018-08-17 00:00:00-05:00"),
-                    Title = "End of Call for Speakers",
-                    CallToAction = "Submit Paper"
-                },
-                new Date
-                {
                     Href = "https://devfestweekend.eventbrite.com/",
                     When = DateTime.Parse("2018-10-13 09:00:00-05:00"),
                     Title = "Irving, TX",
