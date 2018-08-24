@@ -24,9 +24,11 @@
 </div><!-- /.gb-breadcrumb -->
 <div class="gb-speakers gb-section">
     <div class="container">
-        @if (Model.Speakers != null && Model.Speakers.Count > 0)
-        {
-            @await Html.PartialAsync("Speakers/Speakers", Model.Speakers)
-        }
+        <div class="row">
+            @if (Model.Speakers != null && Model.Speakers.Count > 0)
+            {
+                @await Html.PartialAsync("Speakers/Speakers", Model.Speakers)
+            }
+        </div>
     </div>
 </div>
