@@ -32,7 +32,21 @@ namespace devfestweekend.Services
 
                 var json = await response.Content.ReadAsStringAsync();
 
-                return JsonConvert.DeserializeObject<List<FeaturedEvent>>(json);
+                var events = JsonConvert.DeserializeObject<List<FeaturedEvent>>(json);
+
+                events.ForEach(e =>
+                {
+                    if (e.StartTime.HasValue)
+                    {
+                        e.StartTime = e.StartTime.Value.AddHours(5);
+                    }
+                    if (e.EndTime.HasValue)
+                    {
+                        e.EndTime = e.EndTime.Value.AddHours(5);
+                    }
+                });
+
+                return events;
             }
             catch (Exception exception)
             {
