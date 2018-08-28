@@ -33,3 +33,7 @@
 .sponsors-bg {
     background-image: url(../images/bg/sponsors-bg.png);
 }
+
+div.speaker {
+    height: 390px;
+}
