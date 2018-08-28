@@ -12,9 +12,21 @@ namespace devfestweekend.Extensions
                 DateTimeZoneProviders.Tzdb["US/Central"];
         public static DateTime ConvertToCentral(this DateTime date)
         {
-            return Instant.FromDateTimeUtc(date)
-                .InZone(CentralTimeZone)
-                .ToDateTimeUnspecified();
+            if (date == DateTime.MinValue)
+                return date;
+
+            if (date.Kind == DateTimeKind.Utc)
+            {
+                return Instant.FromDateTimeUtc(date)
+                    .InZone(CentralTimeZone)
+                    .ToDateTimeUnspecified();
+            }
+            else
+            {
+                return Instant.FromDateTimeOffset(date)
+                    .InZone(CentralTimeZone)
+                    .ToDateTimeUnspecified();
+            }
         }
     }
 }
