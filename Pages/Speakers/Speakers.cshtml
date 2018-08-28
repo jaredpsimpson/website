@@ -1,10 +1,8 @@
 ﻿@model List<devfestweekend.Models.Speaker>
 @if (Model != null && Model.Count > 0)
 {
-    <div class="row text-left">
-        @foreach (var speaker in Model)
-        {
-            await Html.RenderPartialAsync("Speakers/Speaker", speaker);
-        }
-    </div><!-- /.row -->
+    @foreach (var speaker in Model)
+    {
+        await Html.RenderPartialAsync("Speakers/Speaker", speaker);
+    }
 }
