@@ -19,8 +19,8 @@ namespace devfestweekend.Pages
             var sessions = await dataService.GetSessionsAsync();
 
             Speakers = sessions
-                    .Select(s => s.Speakers.First())
-                    .Distinct()
+                    .SelectMany(s => s.Speakers)
+                    .Distinct(new SpeakerEqualityComparer())
                     .OrderBy(s => Guid.NewGuid())
                     .ToList();
 
@@ -30,6 +30,19 @@ namespace devfestweekend.Pages
                         .Where(session => session.Speakers.Any(s => s.Id == speaker.Id))
                         .ToList();
             });
+        }
+
+        class SpeakerEqualityComparer : IEqualityComparer<Speaker>
+        {
+            public bool Equals(Speaker x, Speaker y)
+            {
+                return x.Id == y.Id;
+            }
+
+            public int GetHashCode(Speaker obj)
+            {
+                return obj.Id.GetHashCode();
+            }
         }
     }
 }
