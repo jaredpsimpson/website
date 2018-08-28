@@ -1,0 +1,29 @@
+﻿@page
+@model devfestweekend.Pages.SponsorsModel
+@{
+    ViewData["Title"] = "Speakers";
+    Layout = "_Layout";
+}
+
+<div class="gb-breadcrumb gb-bg white-color sponsors-bg">
+    <div class="container">
+        <div class="breadcrumb-info text-center">
+            <div class="page-title">
+                <h2>
+                    <span class="before-top"></span>
+                    <span>Sponsors</span>
+                    <span class="before-bottom"></span>
+                </h2>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li class="active">Sponsors</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</div><!-- /.gb-breadcrumb -->
+
+@if (Model.GroupedSponsorLevels != null && Model.GroupedSponsorLevels.Count > 0)
+{
+    @await Html.PartialAsync("Sponsors/Sponsors", Model.GroupedSponsorLevels)
+}

@@ -61,5 +61,24 @@ namespace devfestweekend.Services
                 return new List<Session>();
             }
         }
+        
+        public async Task<List<Sponsor>> GetSponsorsAsync()
+        {
+            try
+            {
+                var message = new HttpRequestMessage(HttpMethod.Get, "sponsor");
+
+                var response = await client.SendAsync(message);
+
+                var json = await response.Content.ReadAsStringAsync();
+
+                return JsonConvert.DeserializeObject<List<Sponsor>>(json);
+            }
+            catch (Exception exception)
+            {
+                Debug.WriteLine("");
+                return new List<Sponsor>();
+            }
+        }
     }
 }

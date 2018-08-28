@@ -1,0 +1,28 @@
+﻿@model List<GroupedSponsorLevels>
+
+@if (Model != null && Model.Count > 0)
+{
+    foreach (var level in Model)
+    {
+        <div class="gb-speakers gb-section">
+            <div class="container">
+                <div class="title-section">
+                    <h1 class="color-red">
+                        <span class="before-top"></span>
+                        <span>@level.SponsorLevel.Name</span>
+                        <span class="before-bottom"></span>
+                    </h1>
+                </div>
+
+                @if (level.Sponsors != null && level.Sponsors.Count > 0)
+                {
+                    foreach (var sponsor in level.Sponsors)
+                    {
+                        await Html.RenderPartialAsync("Sponsors/Sponsor", sponsor);
+                    }
+                }
+            </div>
+        </div>
+    }
+
+}
