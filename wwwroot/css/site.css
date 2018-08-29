@@ -55,12 +55,22 @@
     }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 993px) and (max-width: 1199px) {
     div.speaker {
         height: 390px;
     }
 
     div.speaker img {
         width: 212.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    div.speaker {
+        height: 390px;
+    }
+
+    div.speaker img {
+        width: 262.5px;
     }
 }
