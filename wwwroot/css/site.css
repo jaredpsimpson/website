@@ -34,6 +34,33 @@
     background-image: url(../images/bg/sponsors-bg.png);
 }
 
-div.speaker {
-    height: 390px;
+@media (max-width: 749px) {
+    div.speaker {
+        height: 650px;
+        width: 500px;
+    }
+
+    div.speaker img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 750px) {
+    div.speaker {
+        height: 490px;
+    }
+
+    div.speaker img {
+        width: 345px;
+    }
+}
+
+@media (min-width: 993px) {
+    div.speaker {
+        height: 390px;
+    }
+
+    div.speaker img {
+        width: 212.5px;
+    }
 }
