@@ -12,7 +12,7 @@
                     <p>@Model.Abstract</p>
                 </div>
                 <ul class="gb-list">
-                    <li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> @Model.StartTime.Value.ToString("HH:mm tt") - @Model.EndTime.Value.ToString("HH:mm tt")</li>
+                    <li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Time:</span> @Model.StartTime.Value.ConvertToCentral().ToString("HH:mm tt") - @Model.EndTime.Value.ConvertToCentral().ToString("HH:mm tt")</li>
                     <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Room:</span> @Model?.Room?.Name</li>
                 </ul>
             </div>

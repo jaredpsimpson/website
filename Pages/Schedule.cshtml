@@ -27,7 +27,23 @@
     <div class="container">
         <div class="schedule-content text-left">
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab"><span>Schedule</span></a></li>
+                <li role="presentation" class="active">
+                    <a href="#one" aria-controls="one" role="tab" data-toggle="tab" aria-expanded="true">
+                        <span>Schedule</span>
+                    </a>
+                </li>
+                @{ 
+                    var index = 0;
+                    foreach (var track in Model.Tracks)
+                    {
+                        <li role="presentation">
+                            <a href="#@Model.Tabs[index]" aria-controls="@Model.Tabs[index]" role="tab" data-toggle="tab" aria-expanded="true">
+                                <span>@track.Room.Name</span>
+                            </a>
+                        </li>
+                        index++;
+                    }
+                }
             </ul>
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active" id="one">
@@ -43,6 +59,23 @@
                         </ul>
                     </div><!-- /.schedule -->
                 </div>
+                @{
+                    var tabIndex = 0;
+                    foreach (var track in Model.Tracks)
+                    {
+                        <div role="tabpanel" class="tab-pane fade in" id="@Model.Tabs[tabIndex]">
+                            <div class="schedule">
+                                <ul class="gb-list">
+                                    @foreach (var session in track.Sessions)
+                                    {
+                                        @Html.Partial("Events/Session", session)
+                                    }
+                                </ul>
+                            </div><!-- /.schedule -->
+                        </div>
+                        tabIndex++;
+                    }
+                }
             </div>
         </div><!-- /.schedule-content -->
     </div><!-- /.container -->
